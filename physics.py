@@ -93,9 +93,7 @@ class PhysicsWidget(Widget):
         if touch.button == "left":
             ball=self.sellect
             if type(ball) == Ball:
-                ball.pos =
-
-
+                ball.pos = self.scan_to_phy(Vector(touch.x,touch.y))
 
 
     def on_touch_up(self, touch):
